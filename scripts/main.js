@@ -111,7 +111,7 @@ function displayCardsDynamically(collection) {
 
     db.collection(collection)   //the collection called "hikes"
         .orderBy("hike_time")
-        .limit(2)
+        .limit(3)
         .get()
 
         .then(allHikes => {
